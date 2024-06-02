@@ -1,0 +1,17 @@
+<div>
+    <nav>
+        <ul>
+            <li><a href="/products/carts/{{ this.cart }}">Carrito</a></li>
+        </ul>
+    </nav>
+    <h1>Perfil de Usuario</h1>
+        
+        <p>Nombre: {{ this.first_name }}</p>
+        <p>Apellido: {{ this.last_name }}</p>
+        <p>Correo electrónico: {{ this.email }}</p>
+        <p>Edad: {{ this.age }}</p>
+        <form action="/logout" method="GET">
+            <button type="submit">Logout</button>
+        </form>
+
+</div>
